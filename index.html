@@ -1,0 +1,277 @@
+<html>
+    <head><title>台灣六都介紹</title>
+    <meta charset="utf-8">
+    <link href="https://cdn.bootcss.com/flexslider/2.6.3/flexslider.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/flexslider/2.6.3/jquery.flexslider-min.js"></script>        
+    <script>
+        $(window).load(function() {
+            $('.flexslider').flexslider({
+                animation: "slide",
+                rtl: true
+            });
+        });
+    </script>
+    <style>
+        *{
+            margin:0;
+            color:gray;
+            text-align:center;
+        }
+        /* top */
+        .top{
+             background-color: white;
+        }
+        .top .container{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding:10px;
+        }
+        .top .logo{
+            /*border:1px solid red;*/
+            font-size: 35px;
+            font-weight: bold;
+        }
+        .top .logo img{
+            width: 100px;
+            vertical-align: middle;
+        }
+        .top .top-nav{
+            /*border:1px solid red;*/
+            color:#20b2aa;
+            font-size:20px;
+            font-weight: bold;       
+        }
+        .top .top-nav a{
+            text-decoration: none;
+        }
+        /* nav */
+        .nav {
+            background-color:	#FFA54F;
+            display: flex;
+            justify-content: center;
+        }
+        .nav ul {
+            list-style-type: none;  
+            margin: 0; 
+            padding: 0; 
+            overflow: hidden; 
+            background-color: #FFA54F; 
+        }
+        .nav li {
+            float: left; 
+        }
+        .nav li a {    
+            display: block;  
+            color: white;  
+            text-align: center;  
+            padding: 14px 15px;  
+            text-decoration: none;  
+        }
+        .nav li a:hover {
+            background-color: #515B51; 
+        }
+               /*下拉式選單*/
+        .dropdown:hover .dropdown-content {
+            display: block;   /*使用block呈現上下排列*/
+        }
+        li.dropdown:hover{
+            background-color: #333;  /*設定背景顏色*/
+        }
+        .dropdown-content {/*設定下拉選單內容格式*/
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 160px;
+            z-index: 1;
+        }
+        .dropdown-content a {/*設定下拉選單連結內容格式*/
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        /* slider */
+        .slider{
+            background-color: black;
+        }
+        /* banner*/
+        .banner{
+            background-image: linear-gradient(#C7C5B8,#FFF);
+            padding:30px;
+        }
+        .banner h1{
+            padding: 18px;
+        }        
+        /*faculty*/
+        .faculty {
+            display: block;
+            justify-content: center;
+            background-color:#fff3e0;
+            padding:50px;
+        }
+        .faculty h2{
+            font-size: 25px;
+            color: rgb(50,51,52);
+            padding-bottom:40px;
+        }
+        .faculty .container {
+            /*border:1px solid red;*/
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .faculty .teacher{
+            /*border:1px solid blue;*/
+            display:block;
+            text-decoration: none;
+        }
+        .faculty .teacher img{
+            height: 200px;
+            width: 300px;
+        }
+        .faculty .teacher h3{
+            color: White;
+            background-color: rgba(39,40,34,.500);
+            text-align: center;           
+        }
+        /*contact*/
+        .contact {
+            display: block;
+            justify-content: center;
+            margin-top: 30px;
+            margin-bottom: 30px;                
+        }
+        .contact h2{
+            color: rgb(54, 82, 110);
+            font-size: 25px;
+        }
+        .contact .infos{
+            display:flex;
+            margin-top: 30px; 
+            justify-content: center;
+        }
+        .contact .infos .left{
+            display:block;
+            text-align: left;
+            margin-right: 50px;
+        }
+        .contact .infos .left b{
+            display:block;
+            text-align: left;
+            margin-top: 10px;
+            text-decoration: bold;
+            color: Gray;
+            font-size: 18px;
+            line-height: 18px;
+        }
+        .contact .infos .left span{
+            display:block;
+            text-align: left;
+            margin-top: 10px;
+            color: rgba(39,40,34,0.5);
+            font-size: 18px;
+            padding-left: 27px;
+        }
+        .contact .infos .right{
+            height:550px;  
+            width: 50%;
+        }
+        .contact .infos .right iframe{
+            width: 100%;
+            height: 100%;
+            border: 1px solid rgba(39,40,34,0.50);
+        }
+        /*footer*/
+        .footer{
+            display: flex;
+            justify-content: center;
+            background-color: rgb(25,26,30);
+            padding: 30px 0;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="top">
+            <div class="container">
+                <div class="logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Taipei_101_in_2019.jpg/250px-Taipei_101_in_2019.jpg">
+                 台灣六都介紹
+                </div>
+                <div class="top-nav">                
+                  <a href=>註冊</a>
+                  <a href=>登入</a>
+                </div>
+              </div>
+        </div>
+       <div class="nav">   
+    <ul>
+        <li><a href="#home">首頁</a></li>
+        <li><a href="#introduction">六都簡介</a></li>
+        <li class="dropdown"><a href="#faculty">六都地標</a>
+            <div class="dropdown-content">
+                <a href="#faculty">台北市</a>
+                <a href="#faculty">新北市</a>
+                <a href="#faculty">高雄市</a>
+            </div>                       
+        </li>
+        <li><a href="#about">相關資訊</a></li>
+    </ul>
+</div>
+        <div class="slider">
+            <div class="flexslider">
+                <ul class="slides">
+                    <li><img src="https://pic.616pic.com/bg_w1180/00/13/34/4VFVYpRVLA.jpg"/></li>                  
+                    <li><img src="https://png.pngtree.com/thumb_back/fh260/background/20201015/pngtree-sky-nature-landscape-background-image_417166.jpg"/></li>
+                    <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCGI_q3paU4HTMwiW90bAu8gtjYsNfKI_0qKqKNCnvVTNflIFwo5F8eJuXa3vz8HX0lqI&usqp=CAU"/></li>
+                     <li><img src="https://g.udn.com.tw/community/img/PSN_PHOTO/chy076163/f_2652290_1.jpg"/></li>                     
+                </ul>
+            </div>
+        </div>
+        <div class="banner" id="introduction">
+            <h1>六都簡介</h1>
+            <h1>目前中華民國共有六個直轄市</h1>
+            <h1>臺北市、新北市、桃園市、臺中市、臺南市、高雄市，俗稱「六都」。</h1>
+            <h1>六都在行政上皆直轄於行政院，其市長或副市長等市長指定代表均得列席行政院會議並發言。</h1>
+        </div>
+        <div class="faculty" id="faculty">
+            <h2>六都地標</h2>
+            <div class="container">
+            <a class="teacher" href="">
+                    <img src="https://youimg1.tripcdn.com/target/100g0f0000007ghd3462A.jpg"/>
+                    <h3>台北市</h3>
+                </a>
+                <a class="teacher" href="">
+                    <img src="https://img.shoplineapp.com/media/image_clips/5f3e0ab42e8cee002d499d13/original.jpg?1597901492"/>
+                    <h3>新北市</h3>
+                </a>                                                              
+                <a class="teacher" href="">
+                    <img src="https://sites.google.com/site/kaohsiunghistory/_/rsrc/1440401644535/gao-xiong-de-de-biao/SkyTower03.jpg"/>                
+                    <h3>高雄市</h3>
+                </a>
+            </div>
+        </div>
+        <div class="contact" id="about">
+                <h2>相關資訊</h2>
+                <div class="infos">
+                    <div class="left">
+                        <b>如果想進一步了解六都的其他事情</b>
+                        <span>請聯繫我:陳承翰</span>
+                        <b> 電話:03-362918</b>
+                        <span>分機:3561、3562、3563</span>
+                        <b> E-Mail:hank.cch.2003@gmail.com</b>
+                        <span>分機:3822</span>
+                    </div>
+                    <div class="right">
+                        <iframe src="https://www.mirrormedia.com.tw/assets/images/20180117145116-a4f77f0d11602b27313161531a51dfd7-mobile.jpg" allowfullscreen></iframe>
+                    </div>
+                </div>
+        </div>
+        <div class="footer">
+            &copy;Copyright 2022 Department of Information Management, MUST. All rights reserved. 陳承翰 Hank CHChen
+        </div>
+     </body>
+</html>
