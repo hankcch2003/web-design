@@ -9,24 +9,27 @@
         body {    
             background-color: #202124;
             font-family: 'Open Sans', sans-serif;
-            margin: 0px;
-            padding: 0px;
+            margin: 0;
+            padding: 0;
         }
-        .header .left {
-            width: 100px;
-            height: 100%;
-            float: left;
+        .header {
+            display: flex; /* 使用flexbox來排版 */
+            justify-content: space-between; /* 讓左右兩側的元素間距自動調整 */
+            align-items: center; /* 垂直置中所有元素 */
+            height: 60px; /* 設置header高度 */
+            padding: 0 20px; /* 在左右兩邊添加padding */
+        }
+        .left, .right {
             display: flex;
             justify-content: center;
             align-items: center;
         }
-        .header .right {
-            width: 50px;
-            height: 100%;
-            float: right;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        .left {
+            width: auto;
+        }
+        .right {
+            width: auto;
+            margin-left: 20px; /* 讓右側元素之間有些間隔 */
         }
         a {
             color: #fff;
@@ -56,9 +59,10 @@
         <div class="right"><img class="header-img" src="https://png.pngtree.com/png-vector/20221222/ourmid/pngtree-super-cute-cartoon-vector-bear-png-image_6504049.png" alt="Super cute bear"></div>
         <div class="right">
             <svg class="gb_h" focusable="false" viewBox="0 0 24 24">
-                <path d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,
-                2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,
-                2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"></path>
+                <path d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,
+                2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,
+                -2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,
+                0.9 -2,2 0.9,2 2,2z"></path>
             </svg>
         </div>
         <div class="right"><a href="https://www.google.com.tw/imghp?hl=zh-TW&ogbl">圖片</a></div>
