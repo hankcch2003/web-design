@@ -47,6 +47,35 @@
             border-radius: 50%;
             background-color: white;
         }
+        .content {
+            width: 100%;
+            height: calc(100vh - 136px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .content .main {
+            width: 600px;
+            height: 300px;
+        }
+        .content .main .logo {
+            width: 100%;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .content .main .search {
+            width: 100%;
+            height: 50px;
+        }
+		.content .main .button {
+            width: 100%;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }        
     </style>
 </head>
 <body>
@@ -64,5 +93,20 @@
         <div class="right"><a href="https://www.google.com.tw/imghp?hl=zh-TW&ogbl">圖片</a></div>
         <div class="right"><a href="https://mail.google.com/mail/&ogbl">Gmail</a></div>
     </div>
+    	<div class="content">
+        <div class="main">
+            <div class="logo"></div>
+            <form action="" method="get">
+                <div class="search">
+                    <div class="bar">
+                        <div class="icon"></div>
+                        <div class="icon"></div>
+                        <div class="icon"></div>
+                    </div>
+                </div>
+                <div class="button"></div>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
