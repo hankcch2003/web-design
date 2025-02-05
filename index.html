@@ -78,10 +78,10 @@
         .content .main .search .bar {
             width: 100%;
             height: 100%;
-            border: 1px solid grey;
-            border-radius: 30px;
+            border: 5px solid grey;
+	    border-radius: 30px;
             display: flex;
-            justify-content: center;
+            justify-content: left;
             align-items: center;
         }
         .content .main .search .bar .icon {
@@ -91,24 +91,23 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            float: left;
+	    float: left;
         }
         .content .main .search .bar .icon svg {
             width: 20px;
-            fill: grey;
         }
         .content .main .search .bar .icon img {
             height: 20px;
         }
-        /* 讓搜尋圖片變為灰色 */
-        .content .main .search .bar .icon img.search-icon {
-            filter: grayscale(100%);
-        }
-        /* 保證相機圖片為透明背景 */
-        .content .main .search .bar .icon img.camera-icon {
-            /* 這裡假設圖片本身是透明背景的 PNG */
-            background-color: transparent;
-        }
+	.content .main .search .bar input {
+            width: calc(100% - 155px);
+            height: 100%;
+            float: left;
+            background-color: transparent;
+            border: none;
+            color: #fff;
+            font-size: 16px;
+        }
     </style>
 </head>
 <body>
@@ -123,27 +122,20 @@
         <div class="right"><a href="https://www.google.com.tw/imghp?hl=zh-TW&ogbl">圖片</a></div>
         <div class="right"><a href="https://mail.google.com/mail/&ogbl">Gmail</a></div>
     </div>
-    <div class="content">
-        <div class="main">
+       <div class="content">
+            <div class="main">
             <div class="logo"><img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo"></div>
             <form action="" method="get">
-                <div class="search">
-                    <div class="bar">
-                        <div class="icon">
-                            <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                                <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57 1.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
-                            </svg>
-                        </div>
-                        <div class="icon">
-                            <img class="search-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/1432px-Google_mic.svg.png" alt="Google Mic">
-                        </div>
-                        <div class="icon">
-                            <img class="camera-icon" src="https://cdn6.aptoide.com/imgs/d/9/5/d95ec1fceca188ab12a6f3c32d157acc_icon.png" alt="Google Lens">
-                        </div>
-                    </div>
-                    <div class="button"></div>
-                </div>
-            </form>
+      <div class="search">
+            <div class="bar">
+	    <div class="icon"><svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471
+	    0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14
+	    7.01 14 9.5 11.99 14 9.5 14z"></path></svg></div>
+            <input type="text" name="q" placeholder="搜尋 Google 或輸入網址">
+            <div class="icon"><img src="Google_mic.svg.png" alt=""></div>
+            <div class="icon"><img src="Google_Lens_Icon.svg.png" alt=""></div>
+           <div class="button"></div>
+        </form>
         </div>
     </div>
 </body>
