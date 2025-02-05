@@ -86,12 +86,15 @@
         .content .main .logo img {
             border-radius: 50%;
         }
-        .content .main .search .bar .icon {
-            width: 30px;
-            height: 30px;
-            background-color: grey;
-            margin-right: 10px;
-        }
+        .content .main .search .bar .icon {
+            width: 50px;
+            height: 100%;
+            border-radius: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            float: left;
+        }     
     </style>
 </head>
 <body>
@@ -109,21 +112,20 @@
         <div class="right"><a href="https://www.google.com.tw/imghp?hl=zh-TW&ogbl">圖片</a></div>
         <div class="right"><a href="https://mail.google.com/mail/&ogbl">Gmail</a></div>
     </div>
-    <div class="content">
-        <div class="main">
-            <div class="logo"><img src="googlelogo.png" alt=""></div>
-            </div>
-            <form action="" method="get">
-                <div class="search">
-                    <div class="bar">
-                        <div class="icon"></div>
-                        <div class="icon"></div>
-                        <div class="icon"></div>
-                    </div>
-                </div>
-                <div class="button"></div>
-            </form>
-        </div>
-    </div>
+	<div class="content">
+        <div class="main">
+            <div class="logo"></div>
+            <form action="" method="get">
+                <div class="search">
+                    <div class="bar">
+                        <div class="icon"></div>
+                        <div class="icon"></div>
+                        <div class="icon"></div>
+                    </div>
+                </div>
+                <div class="button"></div>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
