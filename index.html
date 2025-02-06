@@ -143,7 +143,16 @@
                </div>
 	       <div class="button"></div>
                </form>
-          </div>
+          </div>	  
      </div>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+     <script>
+         $('.search .bar input').on('focus',function (){
+             $('.search .bar').addClass('focus');
+         })
+         $('.search .bar input').on('blur',function (){
+             $('.search .bar').removeClass('focus');
+         })
+    </script>
 </body>
 </html>
