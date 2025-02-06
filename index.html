@@ -9,8 +9,8 @@
         body {    
             background-color: #202124;
             font-family: 'Open Sans', sans-serif;
-            margin: 2px;
-            padding: 2px;
+            margin: 0px;
+            padding: 0px;
         }
         .header .left {
             width: 100px;
@@ -122,7 +122,7 @@
         .content .main .button .btn {
             margin: 5px;
             background-color: rgb(58, 58, 58);
-            padding: 10px 20px 10px 20px;
+            padding: 10px 10px 10px 10px;
             border: 1px solid black;
             border-radius: 5px;
             color: #fff;
@@ -132,6 +132,20 @@
             background-color: #505050;
             border: 1px solid grey;
         }
+        .footer {
+            width: 100vw;
+            height: 90px;
+            background-color: #171717;
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+	.footer .row {
+            width: 100%;
+            height: 45px;
+            display: flex;
+            align-items: center;
+        }
     </style>
 </head>
 <body>
@@ -164,8 +178,17 @@
 	       <div class="button">
                    <button class="btn">Google搜尋</button>
                    <a class="btn" href='https://doodles.google/'>好手氣</a>
-               </div>
-          </form>
+              </div>
+              <div class="footer">
+                  <div class="row"></div>
+                  <div class="row_line"></div>
+                  <div class="row">
+                      <div class="left">
+                          <div class="column"></div>
+                  </div>
+                  <div class="right">
+                      <div class="column"></div>
+                  </div>
           </div>	  
      </div>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
