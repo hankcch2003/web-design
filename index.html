@@ -133,46 +133,40 @@
             border: 1px solid grey;
         }
         .footer {
-            width: 100vw;
-            height: 90px;
-            background-color: #171717;
-            box-sizing: border-box;
-            margin: 0px;
-            padding: 0px;
-        }
-	.footer .row {
-            width: 100%;
-            height: 45px;
-            display: flex;
-            align-items: center;
-        }
-        .footer .row p, .footer .row a {
-            margin: 0px 20px 0px 20px;
-        }
-        .footer .row_line {
-            width: 100%;
-            border-bottom: 1px solid grey;
-        }
-	.footer .row .left, .footer .row .right {
-            width: 50%;
-            height: 100%;
-            float: left;
-            display: flex;
+            width: 100vw;
+            height: 90px;
+            background-color: #171717;
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+        .footer .row {
+            width: 100%;
+            height: 45px;
+            display: flex;
             align-items: center;
-            flex-direction: row;
-        }
+        }
+        .footer .row p, .footer .row a {
+            margin: 0px 20px 0px 20px;
+        }
+        .footer .row_line {
+            width: 100%;
+            border-bottom: 1px solid grey;
+        }
+        .footer .row .left, .footer .row .right {
+            width: 50%;
+            height: 100%;
+            float: left;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+        }
         .footer .row .left {
-            justify-content: left;
-            &.column {
-                 width: 300px;
-            }
-        }
-        .footer .row .right {
-            justify-content: right;
-            &.column {
-                 width: 250px;
-            }
-        }
+            justify-content: left;
+        }
+        .footer .row .right {
+            justify-content: right;
+        }
     </style>
 </head>
 <body>
@@ -180,58 +174,49 @@
         <div class="left"><a href="https://about.google/?fg=1&utm_source=google-&utm_medium=referral&utm_campaign=hp-header">關於Google</a></div>
         <div class="left"><a href="https://store.google.com/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=zh-TW">Google商店</a></div>
         <div class="right"><img class="header-img" src="https://png.pngtree.com/png-vector/20221222/ourmid/pngtree-super-cute-cartoon-vector-bear-png-image_6504049.png" alt="Super cute bear"></div>
-        <div class="right"><svg class="gb_h" focusable="false" viewBox="0 0 24 24"><path d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,
-        2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,
-        2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,
-        0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"></path></svg></div>
+        <div class="right"><svg class="gb_h" focusable="false" viewBox="0 0 24 24"><path d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"></path></svg></div>
         <div class="right"><a href="https://www.google.com.tw/imghp?hl=zh-TW&ogbl">圖片</a></div>
         <div class="right"><a href="https://mail.google.com/mail/&ogbl">Gmail</a></div>
     </div>
     <div class="content">
         <div class="main">
             <div class="logo"><img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo"></div>
-           <form action="https://www.google.com.tw/search" method="get">
-                <div class="search">
-                    <div class="bar">
-                        <input type="text" name="q" placeholder="搜尋 Google 或輸入網址">
-                    </div>
-                </div>
-            </form>
+            <form action="https://www.google.com.tw/search" method="get">
                 <div class="search">
                     <div class="bar">
-                        <div class="icon"><svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471
-                        0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14
-                        7.01 14 9.5 11.99 14 9.5 14z"></path></svg></div>
+                        <div class="icon"><svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg></div>
                         <input type="text" name="q" placeholder="搜尋 Google 或輸入網址">
                         <div class="icon"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/450px-Google_mic.svg.png" alt="Mic"></div>
                         <div class="icon"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Google_Lens_Icon.svg/2048px-Google_Lens_Icon.svg.png" alt="Lens"></div>
                     </div>
-               </div>
-	       <div class="button"></div>
-	       <div class="button">
-                   <button class="btn">Google搜尋</button>
-                   <a class="btn" href='https://doodles.google/'>好手氣</a>
-              </div>
-              <div class="footer">
-              <div class="row"><p>台灣</p></div>
-              <div class="row_line"></div>
-              <div class="row">
-              <div class="left">
-                  <div class="column"><a href="">廣告</a><a href="">商業</a><a href="">搜尋服務的運作方式</a></div>
-             </div>
-             <div class="right">
-                 <div class="column"><a href="">隱私權</a><a href="">服務條款</a><a href="">設定</a></div>
-            </div>
-        </div>
-    </div>
+                </div>
+                <div class="button">
+                    <button class="btn">Google搜尋</button>
+                    <a class="btn" href='https://doodles.google/'>好手氣</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="row"><p>台灣</p></div>
+        <div class="row_line"></div>
+        <div class="row">
+            <div class="left">
+                <div class="column"><a href="">廣告</a><a href="">商業</a><a href="">搜尋服務的運作方式</a></div>
+            </div>
+            <div class="right">
+                <div class="column"><a href="">隱私權</a><a href="">服務條款</a><a href="">設定</a></div>
+            </div>
+        </div>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script>
-        $('.search .bar input').on('focus',function (){
-            $('.search .bar').addClass('focus');
-        })
-        $('.search .bar input').on('blur',function (){
-            $('.search .bar').removeClass('focus');
-        })
-   </script>
+    <script>
+        $('.search .bar input').on('focus', function () {
+            $('.search .bar').addClass('focus');
+        });
+        $('.search .bar input').on('blur', function () {
+            $('.search .bar').removeClass('focus');
+        });
+    </script>
 </body>
 </html>
